@@ -14,20 +14,18 @@ app.get('/', function (req, res) {
     res.send('Hello World!!')
 })
 
-
-app.post('/webhook', middleware(config), (req, res) => {
-  
+app.post('/webhook', middleware(config), (req, res) => {  //req = request
   const event = req.body.events[0];
-
+  
   if (event.type === 'message') {
     const message = event.message;
     console.log(message)
     client.replyMessage(event.replyToken, {
       type: 'text',
-      text: message.type,
+      text: message.type,//change
     });
   }
-  
+  res.send('webhook success')//
   
 })
 
@@ -37,4 +35,3 @@ app.set('port', (process.env.PORT || 4000))
 app.listen(app.get('port'), function () {
   console.log('run at port', app.get('port'))
 })
-
