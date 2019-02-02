@@ -39,13 +39,13 @@ app.post('/webhook', middleware(config), (req, res) => {  //req = request
             },
             "actions": [
                 {
-                  "type": "postback",
+                  "type": "uri",
                   "label": "Facebook",
                   "uri": "https://www.facebook.com/pichaon.rinrit"
                   
                 },
                 {
-                  "type": "message",
+                  "type": "uri",
                   "label": "ISNE#5 CMU",
                   "uri": "http://cpe.eng.cmu.ac.th/2013/"
                   
