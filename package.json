@@ -1,23 +1,18 @@
 {
-  "name": "chatbot-cpe-cmu2019-starter",
+  "name": "02-reply-bot-with-sticker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thanainan03/chatbot-cpe-cmu2019-starter.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thanainan03/chatbot-cpe-cmu2019-starter/issues"
-  },
-  "homepage": "https://github.com/thanainan03/chatbot-cpe-cmu2019-starter#readme",
   "dependencies": {
     "@line/bot-sdk": "^6.4.0",
-    "express": "^4.16.4"
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "node-rest-client": "^3.1.0",
+    "nodemon": "^1.18.9"
   }
 }
