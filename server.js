@@ -23,6 +23,7 @@ app.post('/webhook', line.middleware(config), (req, res) => {
 });
 
 function handleEvent(event) {
+    console.log(event)
   if(event.type === 'message' && event.message.type === 'location') {
     return handleLocationEvent(event)
   }else {
