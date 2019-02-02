@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/thanainan03/chatbot-cpe-cmu2019-starter#readme",
   "dependencies": {
+    "@line/bot-sdk": "^6.4.0",
     "express": "^4.16.4"
   }
 }
