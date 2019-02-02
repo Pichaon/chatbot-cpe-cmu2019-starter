@@ -30,8 +30,8 @@ app.post('/webhook', middleware(config), (req, res) => {  //req = request
             "imageAspectRatio": "rectangle",
             "imageSize": "cover",
             "imageBackgroundColor": "#9EE37D",
-            "title": "Menu",
-            "text": "Please select",
+            "title": "Parn",
+            "text": "Pichaon  Rinrit",
             "defaultAction": {
                 "type": "uri",
                 "label": "View detail",
@@ -40,13 +40,15 @@ app.post('/webhook', middleware(config), (req, res) => {  //req = request
             "actions": [
                 {
                   "type": "postback",
-                  "label": "Buy",
-                  "data": "action=buy&itemid=123"
+                  "label": "Facebook",
+                  "uri": "https://www.facebook.com/pichaon.rinrit"
+                  
                 },
                 {
                   "type": "message",
-                  "label": "Add to cart",
-                  "text": "no no no"
+                  "label": "ISNE#5 CMU",
+                  "uri": "http://cpe.eng.cmu.ac.th/2013/"
+                  
                 },
                 {
                   "type": "uri",
