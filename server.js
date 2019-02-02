@@ -24,10 +24,10 @@ app.post('/webhook', middleware(config), (req, res) => {
 
     client.replyMessage(event.replyToken, {
       type: 'text',
-      text: message.text,
+      text: message.type,
     });
   }
-  res.send('webhook success')//
+  
   
 })
 
