@@ -24,7 +24,7 @@ app.post('/webhook', middleware(config), (req, res) => {
 
     client.replyMessage(event.replyToken, {
       type: 'text',
-      text: message,
+      text: message.text,
     });
   }
   res.send('webhook success')//
